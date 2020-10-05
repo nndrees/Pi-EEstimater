@@ -61,7 +61,7 @@ public class EstimatePi
 		while (count < size)
 		{
 			double num = xyList.get(count);
-			double num3 = Math.pow((num - mean), 2);
+			double num3 = (num - mean) * (num - mean);
 			newSum = newSum + num3;
 			count++;
 		}
